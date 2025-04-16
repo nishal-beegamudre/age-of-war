@@ -99,7 +99,7 @@ As it has more strength over Foot Archer and Cavalry Archer, their integer value
 
 * Platoon Assigner: This class has the main business logic. It extensively uses Stream API, Data Structures (Collection Framework), exception handlers to optimize the readability and speed. It takes inputs and provides the output in the String format.
 
-&emsp;&emsp; Platoon Assigner Class -
+&emsp;&emsp; Platoon Assigner Class - Age-Of-War/src/main/java/com/ageofwar/business/logic/PlatoonAssigner.java
 
 * Platoon Assigner Test : This class has sample input and output test cases. As there are multiple outputs possible, test assertions have been based on whether at least 3 battles can be won or not.
 
