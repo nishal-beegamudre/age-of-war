@@ -18,14 +18,14 @@ Each soldier type has its own strengths over particular other types. Based on th
 Home side has to win at least 3 battles. If not, it needs to give an output String with value "There is no chance of winning".
 Each class of soldier has an advantage over other classes of soldiers.
 
-* | Soldier Type  |    Has advantage over		|
+* **| Soldier Type  |    Has advantage over		|**
 
 * | Militia       | Spearmen, LightCavalry		|
 * | Spearmen      | LightCavalry, HeavyCavalry		|
 * | LightCavalry  | FootArcher, CavalryArcher		|
 * | HeavyCavalry  | Militia, FootArcher, LightCavalry	|
 * | CavalryArcher | Spearmen, HeavyCavalry		|
-* | FootArcher    | Militia, CavalryArcher		|
+* | FootArcher    | Militia, CavalryArcher		|<br />
 
 The soldiers who have advantage over the opponent, will be able to handle twice the amount of opponent's soldiers
 If your platoon has 100 Spearmen and your opponent's platoon has:
@@ -47,11 +47,11 @@ If there is no possibility to get atleast 3 out of 5 wins in any arrangement, it
 
 ## Sample Input and Output
 
-Input:
+**Input:**
 Spearmen#10;Militia#30;FootArcher#20;LightCavalry#1000;HeavyCavalry#120
 Militia#10;Spearmen#10;FootArcher#1000;LightCavalry#120;CavalryArcher#100
 
-Output:
+**Output:**
 Militia#30;FootArcher#20;Spearmen#10;LightCavalry#1000;HeavyCavalry#120
 
 There are multiple winning combinations possible.
@@ -60,13 +60,13 @@ Militia#30;FootArcher#20;LightCavalry#1000;HeavyCavalry#120;Spearmen#10
 
 Here, out of 5, 4 battles can be won.
 
-* | Own team           |    Opponent team      |     Strength of Soldier Type   |   Verdict  |
+* **| Own team           |    Opponent team      |     Strength of Soldier Type   |   Verdict  |**
 
 * | Militia 30         |     Militia 10        |        Same soldier type       |   Win	   |
 * | Foot Archer 20     |    Spearmen 10        |        Equal Strength          |   Win	   |
 * | Light Cavalry 1000 |  Foot Archer 1000     |     Light Cavalry is stronger  |   Win	   |
 * | Heavy Cavalry 120  |  Light Cavalry 120    |     Heavy Cavalry is stronger  |   Win	   |
-* | Spearmen 10        |  Cavalry Archer 120   |     Cavalry Archer is stronger |   Lose	   |
+* | Spearmen 10        |  Cavalry Archer 120   |     Cavalry Archer is stronger |   Lose   |
 
 
 ## Implementation
@@ -75,21 +75,21 @@ Here, out of 5, 4 battles can be won.
 
 Platoon Class - 
 
-* This parent class has been inherited by respective soldier types Militia, Spearmen, FootArcher, LightCavalry, HeavyCavalry, CavalryArcher classes. The method 'getStrengthFactor' has been overridden in each class where it is pointing to the respective class's Map<String,Integer> value. Setting strength factor has been disabled by making the variable private and no setter is being used. Map variable takes a sample input as shown below. This is for LightCavalry which has strength over FootArcher and CavalryArcher.
-      strengthFactorMap.put("Militia", 1);
-	    strengthFactorMap.put("Spearmen", 1);
-	    strengthFactorMap.put("LightCavalry", 1);
-	    strengthFactorMap.put("HeavyCavalry", 1);
-	    strengthFactorMap.put("FootArcher", 2);
-	    strengthFactorMap.put("CavalryArcher", 2);
-As it has more strength over Foot Archer and Cavalry Archer, their integer values are being shown as '2'.
+* This parent class has been inherited by respective soldier types Militia, Spearmen, FootArcher, LightCavalry, HeavyCavalry, CavalryArcher classes. The method 'getStrengthFactor' has been overridden in each class where it is pointing to the respective class's Map<String,Integer> value. Setting strength factor has been disabled by making the variable private and no setter is being used. Map variable takes a sample input as shown below. This is for LightCavalry which has strength over FootArcher and CavalryArcher.<br />
+            strengthFactorMap.put("Militia", 1);<br />
+	    strengthFactorMap.put("Spearmen", 1);<br />
+	    strengthFactorMap.put("LightCavalry", 1);<br />
+	    strengthFactorMap.put("HeavyCavalry", 1);<br />
+	    strengthFactorMap.put("FootArcher", 2);<br />
+	    strengthFactorMap.put("CavalryArcher", 2);<br />
+As it has more strength over Foot Archer and Cavalry Archer, their integer values are being shown as '2'.<br />
 
-Militia Class -
-Spearmen Class -
-LightCavalry Class -
-HeavyCavalry Class -
-FootArcher Class -
-CavalryArcher Class -
+<br />Militia Class -
+<br />Spearmen Class -
+<br />LightCavalry Class -
+<br />HeavyCavalry Class -
+<br />FootArcher Class -
+<br />CavalryArcher Class -
 
 * A utility class has been formed which has 2 static methods.
   1) getInstanceByString : It acts similar to a factory method in Factory Design Pattern which takes an input string type and provides the respective instance of the soldier type class. It also takes number of soldiers as input and adds it to the variable.
