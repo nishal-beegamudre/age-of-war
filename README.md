@@ -16,17 +16,16 @@ Each soldier type has its own strengths over particular other types. Based on th
 ## Rules
 
 Home side has to win at least 3 battles. If not, it needs to give an output String with value "There is no chance of winning".
-
 Each class of soldier has an advantage over other classes of soldiers.
 
-Soldier Type      Has advantage over
+* | Soldier Type  |    Has advantage over		|
 
-Militia       -> Spearmen, LightCavalry
-Spearmen      -> LightCavalry, HeavyCavalry
-LightCavalry  -> FootArcher, CavalryArcher
-HeavyCavalry  -> Militia, FootArcher, LightCavalry
-CavalryArcher -> Spearmen, HeavyCavalry
-FootArcher    -> Militia, CavalryArcher
+* | Militia       | Spearmen, LightCavalry		|
+* | Spearmen      | LightCavalry, HeavyCavalry		|
+* | LightCavalry  | FootArcher, CavalryArcher		|
+* | HeavyCavalry  | Militia, FootArcher, LightCavalry	|
+* | CavalryArcher | Spearmen, HeavyCavalry		|
+* | FootArcher    | Militia, CavalryArcher		|
 
 The soldiers who have advantage over the opponent, will be able to handle twice the amount of opponent's soldiers
 If your platoon has 100 Spearmen and your opponent's platoon has:
@@ -61,13 +60,13 @@ Militia#30;FootArcher#20;LightCavalry#1000;HeavyCavalry#120;Spearmen#10
 
 Here, out of 5, 4 battles can be won.
 
-| Own team           |    Opponent team      |     Strength of Soldier Type   |   Verdict  |
+* | Own team           |    Opponent team      |     Strength of Soldier Type   |   Verdict  |
 
-| Militia 30         |     Militia 10        |        Same soldier type       |   Win	   |
-| Foot Archer 20     |    Spearmen 10        |        Equal Strength          |   Win	   |
-| Light Cavalry 1000 |  Foot Archer 1000     |     Light Cavalry is stronger  |   Win	   |
-| Heavy Cavalry 120  |  Light Cavalry 120    |     Heavy Cavalry is stronger  |   Win	   |
-| Spearmen 10        |  Cavalry Archer 120   |     Cavalry Archer is stronger |   Lose	   |
+* | Militia 30         |     Militia 10        |        Same soldier type       |   Win	   |
+* | Foot Archer 20     |    Spearmen 10        |        Equal Strength          |   Win	   |
+* | Light Cavalry 1000 |  Foot Archer 1000     |     Light Cavalry is stronger  |   Win	   |
+* | Heavy Cavalry 120  |  Light Cavalry 120    |     Heavy Cavalry is stronger  |   Win	   |
+* | Spearmen 10        |  Cavalry Archer 120   |     Cavalry Archer is stronger |   Lose	   |
 
 
 ## Implementation
