@@ -61,13 +61,13 @@ Militia#30;FootArcher#20;LightCavalry#1000;HeavyCavalry#120;Spearmen#10
 
 Here, out of 5, 4 battles can be won.
 
-Own team              Opponent team           Strength of Soldier Type      Verdict
+| Own team           |    Opponent team      |     Strength of Soldier Type   |   Verdict  |
 
-Militia 30             Militia 10                Same soldier type          Win
-Foot Archer 20        Spearmen 10                Equal Strength             Win
-Light Cavalry 1000  Foot Archer 1000          Light Cavalry is stronger     Win
-Heavy Cavalry 120   Light Cavalry 120         Heavy Cavalry is stronger     Win
-Spearmen 10         Cavalry Archer 120        Cavalry Archer is stronger    Lose
+| Militia 30         |     Militia 10        |        Same soldier type       |   Win	   |
+| Foot Archer 20     |    Spearmen 10        |        Equal Strength          |   Win	   |
+| Light Cavalry 1000 |  Foot Archer 1000     |     Light Cavalry is stronger  |   Win	   |
+| Heavy Cavalry 120  |  Light Cavalry 120    |     Heavy Cavalry is stronger  |   Win	   |
+| Spearmen 10        |  Cavalry Archer 120   |     Cavalry Archer is stronger |   Lose	   |
 
 
 ## Implementation
