@@ -73,41 +73,41 @@ Here, out of 5, 4 battles can be won.
 
 * Implementation involves OOP's inheritance concept on the modelling part. Parent class 'Platoon' has an integer variable 'numberOfSoldiers' and a Map<String,Integer> as a strength factor map. There is a method that takes input String and provides the respective integer value from that map - getStrengthFactor.
 
-Platoon Class - 
+&nbsp Platoon Class - 
 
 * This parent class has been inherited by respective soldier types Militia, Spearmen, FootArcher, LightCavalry, HeavyCavalry, CavalryArcher classes. The method 'getStrengthFactor' has been overridden in each class where it is pointing to the respective class's Map<String,Integer> value. Setting strength factor has been disabled by making the variable private and no setter is being used. Map variable takes a sample input as shown below. This is for LightCavalry which has strength over FootArcher and CavalryArcher.<br />
-            strengthFactorMap.put("Militia", 1);<br />
-	    strengthFactorMap.put("Spearmen", 1);<br />
-	    strengthFactorMap.put("LightCavalry", 1);<br />
-	    strengthFactorMap.put("HeavyCavalry", 1);<br />
-	    strengthFactorMap.put("FootArcher", 2);<br />
-	    strengthFactorMap.put("CavalryArcher", 2);<br />
+            &nbsp strengthFactorMap.put("Militia", 1);<br />
+	    &nbsp strengthFactorMap.put("Spearmen", 1);<br />
+	    &nbsp strengthFactorMap.put("LightCavalry", 1);<br />
+	    &nbsp strengthFactorMap.put("HeavyCavalry", 1);<br />
+	    &nbsp strengthFactorMap.put("FootArcher", 2);<br />
+	    &nbsp strengthFactorMap.put("CavalryArcher", 2);<br />
 As it has more strength over Foot Archer and Cavalry Archer, their integer values are being shown as '2'.<br />
 
-<br />Militia Class -
-<br />Spearmen Class -
-<br />LightCavalry Class -
-<br />HeavyCavalry Class -
-<br />FootArcher Class -
-<br />CavalryArcher Class -
+<br />&nbsp Militia Class -
+<br />&nbsp Spearmen Class -
+<br />&nbsp LightCavalry Class -
+<br />&nbsp HeavyCavalry Class -
+<br />&nbsp FootArcher Class -
+<br />&nbsp CavalryArcher Class -
 
 * A utility class has been formed which has 2 static methods.
   1) getInstanceByString : It acts similar to a factory method in Factory Design Pattern which takes an input string type and provides the respective instance of the soldier type class. It also takes number of soldiers as input and adds it to the variable.
   2) calculateWeight : It takes input of number of soldiers of own team, number of soldiers of opponent team, strength factor of own team, strength factor of opponent team. It checks if own team is stronger, equal or weaker than opponent team. If own team is stronger, then it returns 1. If it is equal, then it returns 0. If opponent is stronger, it returns -1.
 
-Utility Class -
+&nbsp Utility Class -
 
 * Platoon Assigner: This class has the main business logic. It extensively uses Stream API, Data Structures (Collection Framework), exception handlers to optimize the readability and speed. It takes inputs and provides the output in the String format.
 
-Platoon Assigner Class -
+&nbsp Platoon Assigner Class -
 
 * Platoon Assigner Test : This class has sample input and output test cases. As there are multiple outputs possible, test assertions have been based on whether at least 3 battles can be won or not.
 
-Platoon Assigner Test Class -
+&nbsp Platoon Assigner Test Class -
 
 * Input Provider : This class has main method inside which PlatoonAssigner class will be instantiated and its method will be called along with own and opponent inputs.
 
-Input Provider Class -
+&nbsp Input Provider Class -
 
 ## Assignment Logic:
 
