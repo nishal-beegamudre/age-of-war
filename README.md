@@ -84,7 +84,7 @@ Here, out of 5, 4 battles can be won.
 	    &nbsp strengthFactorMap.put("CavalryArcher", 2);<br />
 As it has more strength over Foot Archer and Cavalry Archer, their integer values are being shown as '2'.<br />
 
-<br />emsp Militia Class -
+<br />&emsp; Militia Class -
 <br />&nbsp Spearmen Class -
 <br />&nbsp LightCavalry Class -
 <br />&nbsp HeavyCavalry Class -
